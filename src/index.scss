@@ -1,11 +1,25 @@
-* {
+@import 'resources/styles/variables.scss';
+@import 'resources/styles/common.scss';
+@import 'resources/styles/typography.scss';
+@import 'resources/styles/utils.scss';
+@import 'resources/styles/common.scss';
+
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
 code {

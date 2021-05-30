@@ -1,0 +1,59 @@
+{
+    "sectionTours": [
+        {
+            "header": "The Sea Explorer",
+            "details": {
+                "days": 3,
+                "people": 30,
+                "guides": 2,
+                "sleepType": "Sleep in cozy hotels",
+                "difficulty": "easy"
+            },
+            "price": "$297"
+        },
+        {
+            "header": "The Forest Hiker",
+            "details": {
+                "days": 7,
+                "people": 40,
+                "guides": 6,
+                "sleepType": "Sleep in provided in tents",
+                "difficulty": "medium"
+            },
+            "price": "$497"
+        },
+        {
+            "header": "The Snow Adventurer",
+            "details": {
+                "days": 5,
+                "people": 15,
+                "guides": 3,
+                "sleepType": "Sleep in provided tents",
+                "difficulty": "hard"
+            },
+            "price": "$897"
+        }
+    ],
+    "sectionFeatures": [
+        {
+            "iconType": "world",
+            "title": "Explore the world",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur."
+        },
+        {
+            "iconType": "compass",
+            "title": "Meet nature",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur."
+        },
+        {
+            "iconType": "map",
+            "title": "Find your way",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur."
+        },
+        {
+            "iconType": "heart",
+            "title": "Live a healthier life",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur."
+        }
+    ]
+}

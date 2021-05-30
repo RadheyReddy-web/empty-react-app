@@ -1,0 +1,26 @@
+import DetailsReducer from 'library/common/reducers/DetailsReducer';
+import React, { useReducer } from 'react';
+import { useSelector, useStore } from 'react-redux';
+import Tour from './Tour/Tour';
+const Tours = () => {
+  const {details} = useSelector(state => state);
+  const { tours: toursData = [] } = details;
+  return (
+    <section className="section-tours" id="section-tours">
+      <div className="u-center-text u-margin-bottom-big">
+        <h2 className="heading-secondary">Most popular tours</h2>
+      </div>
+
+      <div className="row">
+        {toursData.map((tour, index) => (
+          <Tour tour={tour} cardIndex={index} />
+        ))}
+      </div>
+
+      <div className="u-center-text u-margin-top-huge">
+        <button className="btn btn--green">Discover all tours</button>
+      </div>
+    </section>
+  );
+};
+export default Tours;

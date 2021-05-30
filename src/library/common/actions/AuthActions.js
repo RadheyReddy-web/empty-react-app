@@ -7,3 +7,4 @@ export const setAuth = user => dispatch => {
 export const getAuth = () => dispatch => {
   dispatch({ type: actionTypes.GET_AUTH });
 };
+
