@@ -1,25 +1,62 @@
-import React from 'react';
+import useSessionStorage from 'library/common/hooks/storageHook';
+import React, { useState } from 'react';
 import './book.scss';
 const Book = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [user, setUser] = useSessionStorage('user', {});
+  function handleFormSubmission() {
+    setUser({
+      name,
+      email,
+    });
+    setName('');
+    setEmail('');
+  }
   return (
     <section className="section-book">
       <div className="row">
         <div className="book">
           <div className="book__form">
-            <form className="form">
+            <form
+              className="form"
+              onSubmit={e => {
+                e.preventDefault();
+                handleFormSubmission();
+              }}>
               <div className="u-margin-bottom-medium">
                 <h2 className="heading-secondary">Start booking now</h2>
               </div>
 
               <div className="form__group">
-                <input type="text" className="form__input" placeholder="Full name" id="name" required />
+                <input
+                  type="text"
+                  className="form__input"
+                  placeholder="Full name"
+                  id="name"
+                  value={name}
+                  onChange={e => {
+                    setName(e.target.value);
+                  }}
+                  required
+                />
                 <label htmlFor="name" className="form__label">
                   Full name
                 </label>
               </div>
 
               <div className="form__group">
-                <input type="" className="form__input" placeholder="Email address" id="email" required />
+                <input
+                  type="email"
+                  className="form__input"
+                  placeholder="Email address"
+                  id="email"
+                  value={email}
+                  onChange={e => {
+                    setEmail(e.target.value);
+                  }}
+                  required
+                />
                 <label htmlFor="email" className="form__label">
                   Email address
                 </label>
