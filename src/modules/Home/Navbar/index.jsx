@@ -15,27 +15,27 @@ const Navbar = () => {
       <nav className="navigation__nav">
         <ul className="navigation__list">
           <li className="navigation__item">
-            <button  className="navigation__link">
+            <button  className="navigation__link" aria-label="About Natous">
               About Natous
             </button>
           </li>
           <li className="navigation__item">
-            <button  className="navigation__link">
+            <button  className="navigation__link" aria-label="Benifits you get from us">
               Your benfits
             </button>
           </li>
           <li className="navigation__item">
-            <button  className="navigation__link">
+            <button  className="navigation__link" aria-label="Our Most Popular Tours">
               Popular tours
             </button>
           </li>
           <li className="navigation__item">
-            <button  className="navigation__link">
+            <button  className="navigation__link" aria-label="Read Our Customers Stories">
               Stories
             </button>
           </li>
           <li className="navigation__item">
-            <button  className="navigation__link">
+            <button  className="navigation__link" aria-label="Book Exciting Tour with us">
               Book now
             </button>
           </li>

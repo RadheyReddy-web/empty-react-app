@@ -7,7 +7,7 @@ const Story = props => {
     const { src, userName, title, description } = story;
 
     return (
-      <div className="story">
+      <div className="story" aria-label="Happy Customer Story">
         <figure className="story__shape">
           <img src={require(`../../../../../../resources/images/${src}`)} alt="Person on a tour" className="story__img" />
           <figcaption className="story__caption">{userName}</figcaption>

@@ -14,7 +14,7 @@ const Book = () => {
     setEmail('');
   }
   return (
-    <section className="section-book">
+    <section className="section-book" aria-label="Book A Tour Now">
       <div className="row">
         <div className="book">
           <div className="book__form">
@@ -35,12 +35,13 @@ const Book = () => {
                   placeholder="Full name"
                   id="name"
                   value={name}
+                  aria-labelledby="nameLabel"
                   onChange={e => {
                     setName(e.target.value);
                   }}
                   required
                 />
-                <label htmlFor="name" className="form__label">
+                <label htmlFor="name" className="form__label" id="nameLabel">
                   Full name
                 </label>
               </div>
@@ -52,12 +53,13 @@ const Book = () => {
                   placeholder="Email address"
                   id="email"
                   value={email}
+                  aria-labelledby="emailLabel"
                   onChange={e => {
                     setEmail(e.target.value);
                   }}
                   required
                 />
-                <label htmlFor="email" className="form__label">
+                <label htmlFor="email" className="form__label" id="emailLabel">
                   Email address
                 </label>
               </div>
@@ -81,7 +83,7 @@ const Book = () => {
               </div>
 
               <div className="form__group">
-                <button className="btn btn--green" onclick="submitTheForm()">
+                <button className="btn btn--green"  aria-label="Next Step">
                   Next step &rarr;
                 </button>
               </div>

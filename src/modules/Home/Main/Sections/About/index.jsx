@@ -2,7 +2,7 @@ import React from 'react';
 import './about.scss';
 const About = () => {
   return (
-    <section className="section-about">
+    <section className="section-about" aria-label="About Exciting Tours">
       <div className="u-center-text u-margin-bottom-big">
         <h2 className="heading-secondary">Exciting tours for adventurous people</h2>
       </div>
@@ -20,7 +20,7 @@ const About = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nulla deserunt voluptatum nam.
           </p>
 
-          <button className="btn-text">Learn more &rarr;</button>
+          <button className="btn-text" aria-label="Learn More About Exiting Offerings">Learn more &rarr;</button>
         </div>
         <div className="col-1-of-2">
           <div className="composition">

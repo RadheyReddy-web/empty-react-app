@@ -27,7 +27,7 @@ const Popup = () => {
             tortor condimentum lacinia quis vel eros donec. Sit amet facilisis magna etiam. Imperdiet sed euismod nisi
             porta.
           </p>
-          <button  className="btn btn--green">
+          <button  className="btn btn--green" aria-label="Book A Tour With Us Now">
             Book now
           </button>
         </div>

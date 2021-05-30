@@ -11,26 +11,26 @@ const Footer = () => {
           <div className="footer__navigation">
             <ul className="footer__list">
               <li className="footer__item">
-                <button  className="footer__link">
+                <button  className="footer__link" aria-label="Our Company">
                   Company
                 </button>
               </li>
-              <li className="footer__item">
+              <li className="footer__item" aria-label="Contact us">
                 <button  className="footer__link">
                   Contact us
                 </button>
               </li>
-              <li className="footer__item">
+              <li className="footer__item" aria-label="Our Careers">
                 <button  className="footer__link">
                   Carrers
                 </button>
               </li>
-              <li className="footer__item">
+              <li className="footer__item" aria-label="Our Privacy Policy">
                 <button  className="footer__link">
                   Privacy policy
                 </button>
               </li>
-              <li className="footer__item">
+              <li className="footer__item" aria-label="Our Terms">
                 <button  className="footer__link">
                   Terms
                 </button>
@@ -41,7 +41,7 @@ const Footer = () => {
         <div className="col-1-of-2">
           <p className="footer__copyright">
             Built by{' '}
-            <button  className="footer__link">
+            <button  className="footer__link" aria-label="This Page Built by Radhey">
               Radhey
             </button>
           </p>

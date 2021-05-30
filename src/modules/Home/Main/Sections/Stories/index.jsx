@@ -16,7 +16,7 @@ const Stories = props => {
   }
 
   return (
-    <section className="section-stories">
+    <section className="section-stories" aria-label="Our Happy Customers">
       <Video />
 
       <div className="u-center-text u-margin-bottom-big">
@@ -26,7 +26,7 @@ const Stories = props => {
       {renderStories()}
 
       <div className="u-center-text u-margin-top-huge">
-        <button className="btn-text">Read all stories &rarr;</button>
+        <button className="btn-text" aria-label="Read all our customer stories">Read all stories &rarr;</button>
       </div>
     </section>
   );

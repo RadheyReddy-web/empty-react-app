@@ -7,7 +7,7 @@ const Features = () => {
   const { features } = details;
 
   return (
-    <section className="section-features">
+    <section className="section-features" aria-label="Exciting Features Available">
       <div className="row">
         {features.map(feature => (
           <Feature {...feature} />

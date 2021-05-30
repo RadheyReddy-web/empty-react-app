@@ -6,7 +6,7 @@ const Tours = () => {
   const {details} = useSelector(state => state);
   const { tours: toursData = [] } = details;
   return (
-    <section className="section-tours" id="section-tours">
+    <section className="section-tours" id="section-tours" aria-label='Most popular tours'>
       <div className="u-center-text u-margin-bottom-big">
         <h2 className="heading-secondary">Most popular tours</h2>
       </div>
@@ -17,8 +17,8 @@ const Tours = () => {
         ))}
       </div>
 
-      <div className="u-center-text u-margin-top-huge">
-        <button className="btn btn--green">Discover all tours</button>
+      <div className="u-center-text u-margin-top-huge" >
+        <button className="btn btn--green" aria-label="Discover all tours">Discover all tours</button>
       </div>
     </section>
   );
