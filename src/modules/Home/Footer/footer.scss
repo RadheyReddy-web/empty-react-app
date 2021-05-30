@@ -34,15 +34,12 @@
   }
 
   &__link {
-    &:link,
-    &:visited {
-      color: $color-grey-light-1;
-      background-color: $color-grey-dark-3;
-      text-decoration: none;
-      text-transform: uppercase;
-      display: inline-block;
-      transition: all 0.2s;
-    }
+    color: $color-grey-light-1;
+    background-color: $color-grey-dark-3;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 0.2s;
 
     &:hover,
     &:active {
