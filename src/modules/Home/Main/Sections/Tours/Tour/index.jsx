@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.scss';
+import './tour.scss';
 const Tour = props => {
   const { cardIndex, tour } = props;
   const { header, details, price } = tour;

@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.scss';
+import './about.scss';
 const About = () => {
   return (
     <section className="section-about">

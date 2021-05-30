@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.scss';
+import './story.scss';
 const Story = props => {
   const { story } = props;
 

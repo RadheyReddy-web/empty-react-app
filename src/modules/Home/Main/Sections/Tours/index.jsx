@@ -1,7 +1,7 @@
 import DetailsReducer from 'library/common/reducers/DetailsReducer';
 import React, { useReducer } from 'react';
 import { useSelector, useStore } from 'react-redux';
-import Tour from './Tour/Tour';
+import Tour from './Tour';
 const Tours = () => {
   const {details} = useSelector(state => state);
   const { tours: toursData = [] } = details;

@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.scss';
+import './popup.scss';
 const Popup = () => {
   return (
     <div className="popup" id="popup">

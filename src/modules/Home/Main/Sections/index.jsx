@@ -4,7 +4,7 @@ import Book from './Book';
 import Features from './Features';
 import Stories from './Stories';
 import Tours from './Tours';
-import './index.scss';
+import './sections.scss';
 const Sections = () => {
   return (
       <>

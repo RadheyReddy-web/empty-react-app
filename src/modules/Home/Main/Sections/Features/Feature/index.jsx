@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './feature.scss';
 const Feature = props => {
   const { iconType, title, description } = props;
   const boxIconClass = `feature-box__icon icon-basic-${iconType}`;
