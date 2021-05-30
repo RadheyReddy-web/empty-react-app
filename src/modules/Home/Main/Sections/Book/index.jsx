@@ -1,4 +1,5 @@
 import React from 'react';
+import './book.scss';
 const Book = () => {
   return (
     <section className="section-book">
