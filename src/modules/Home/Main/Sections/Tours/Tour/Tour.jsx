@@ -6,6 +6,7 @@ const Tour = props => {
   const { days, people, guides, sleepType, difficulty } = details;
   const cardHeadingClasses = `card__heading-span card__heading-span--${cardIndex}`;
   const pictureClasses = `card__picture card__picture--${cardIndex}`;
+  const cardBackClasses = `card__side card__side--back card__side--back-${cardIndex}`;
   return (
     <div className="col-1-of-3">
       <div className="card">
@@ -20,11 +21,11 @@ const Tour = props => {
               <li>Up to {people} people</li>
               <li>{guides} tour guides</li>
               <li>{sleepType}</li>
-              <li>Difficulty: ${difficulty}</li>
+              <li>Difficulty: {difficulty}</li>
             </ul>
           </div>
         </div>
-        <div className="card__side card__side--back card__side--back-${cardIndex}">
+        <div className={cardBackClasses}>
           <div className="card__cta">
             <div className="card__price-box">
               <p className="card__price-only">Only</p>

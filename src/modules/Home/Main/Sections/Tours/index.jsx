@@ -13,7 +13,7 @@ const Tours = () => {
 
       <div className="row">
         {toursData.map((tour, index) => (
-          <Tour tour={tour} cardIndex={index} />
+          <Tour tour={tour} cardIndex={index+1} />
         ))}
       </div>
 
